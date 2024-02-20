@@ -1,0 +1,334 @@
+{
+  "questions": [
+    {
+      "question": "Which is the most popular JavaScript framework?",
+      "options": ["Angular", "React", "Svelte", "Vue"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which company invented React?",
+      "options": ["Google", "Apple", "Netflix", "Facebook"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "What's the fundamental building block of React apps?",
+      "options": ["Components", "Blocks", "Elements", "Effects"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What's the name of the syntax we use to describe the UI in React components?",
+      "options": ["FBJ", "Babel", "JSX", "ES2015"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How does data flow naturally in React apps?",
+      "options": [
+        "From parents to children",
+        "From children to parents",
+        "Both ways",
+        "The developers decides"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How to pass data into a child component?",
+      "options": ["State", "Props", "PropTypes", "Parameters"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "When to use derived state?",
+      "options": [
+        "Whenever the state should not trigger a re-render",
+        "Whenever the state can be synchronized with an effect",
+        "Whenever the state should be accessible to all components",
+        "Whenever the state can be computed from another state variable"
+      ],
+      "correctOption": 3,
+      "points": 30
+    },
+    {
+      "question": "What triggers a UI re-render in React?",
+      "options": [
+        "Running an effect",
+        "Passing props",
+        "Updating state",
+        "Adding event listeners to DOM elements"
+      ],
+      "correctOption": 2,
+      "points": 20
+    },
+    {
+      "question": "When do we directly \"touch\" the DOM in React?",
+      "options": [
+        "When we need to listen to an event",
+        "When we need to change the UI",
+        "When we need to add styles",
+        "Almost never"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "In what situation do we use a callback to update state?",
+      "options": [
+        "When updating the state will be slow",
+        "When the updated state is very data-intensive",
+        "When the state update should happen faster",
+        "When the new state depends on the previous state"
+      ],
+      "correctOption": 3,
+      "points": 30
+    },
+    {
+      "question": "If we pass a function to useState, when will that function be called?",
+      "options": [
+        "On each re-render",
+        "Each time we update the state",
+        "Only on the initial render",
+        "The first time we update the state"
+      ],
+      "correctOption": 2,
+      "points": 30
+    },
+    {
+      "question": "Which hook to use for an API request on the component's initial render?",
+      "options": ["useState", "useEffect", "useRef", "useReducer"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which variables should go into the useEffect dependency array?",
+      "options": [
+        "Usually none",
+        "All our state variables",
+        "All state and props referenced in the effect",
+        "All variables needed for clean up"
+      ],
+      "correctOption": 2,
+      "points": 30
+    },
+    {
+      "question": "An effect will always run on the initial render.",
+      "options": [
+        "True",
+        "It depends on the dependency array",
+        "False",
+        "In depends on the code in the effect"
+      ],
+      "correctOption": 0,
+      "points": 30
+    },
+    {
+      "question": "When will an effect run if it doesn't have a dependency array?",
+      "options": [
+        "Only when the component mounts",
+        "Only when the component unmounts",
+        "The first time the component re-renders",
+        "Each time the component is re-rendered"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "What is a key in React lists?",
+      "options": [
+        "A way to make elements faster",
+        "An identifier for list items",
+        "A type of prop",
+        "A method for updating state"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What does the useContext Hook do?",
+      "options": [
+        "Manages the app's context",
+        "Fetches data from an API",
+        "Creates a new context",
+        "Consumes and subscribes to React context"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "What is Redux primarily used for?",
+      "options": [
+        "Managing global state",
+        "Styling components",
+        "Data fetching",
+        "Managing local state"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which hook is used to memorize a value?",
+      "options": ["useState", "useEffect", "useMemo", "useCallback"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What does 'lifting state up' mean in React?",
+      "options": [
+        "Moving state to Redux",
+        "Deleting state from a component",
+        "Moving state to a parent component",
+        "Storing state in local storage"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What does 'prop drilling' refer to?",
+      "options": [
+        "Passing props to deep child components",
+        "A method to style components",
+        "A pattern for state management",
+        "Drilling holes in components for ventilation"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which hook is used to perform side effects in function components?",
+      "options": ["useState", "useEffect", "useContext", "useReducer"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What's the purpose of React Router?",
+      "options": [
+        "To manage state",
+        "To connect to APIs",
+        "To navigate between pages",
+        "To style components"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What does the useRef Hook return?",
+      "options": [
+        "A unique identifier",
+        "A state variable",
+        "A function to update state",
+        "A mutable ref object"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "How do you create a new React project using Create React App?",
+      "options": [
+        "npm install create-react-app",
+        "create-react-app my-app",
+        "npm start new-react-app",
+        "npx create-react-app my-app"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is not a valid React hook?",
+      "options": ["useReducer", "useRef", "useFetch", "useContext"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the Fragment component in React?",
+      "options": [
+        "To keep the DOM clean of unnecessary nodes",
+        "To fetch data from an API",
+        "To manage global state",
+        "To handle form submission"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the virtual DOM?",
+      "options": [
+        "A DOM manipulation library",
+        "A copy of the real DOM that React uses to increase performance",
+        "A tool for virtual reality development",
+        "A server-side rendering technique"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which method in a React Component is called after the component renders for the first time?",
+      "options": [
+        "componentDidMount",
+        "componentWillMount",
+        "componentDidUpdate",
+        "render"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "In React, what is used to pass data to a component from outside?",
+      "options": ["setState", "render with arguments", "PropTypes", "props"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is a correct way to create a component?",
+      "options": [
+        "Class MyComponent extends React.Component {}",
+        "function MyComponent() {}",
+        "Both A and B",
+        "React.createComponent(MyComponent)"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do functional components handle state?",
+      "options": [
+        "Using the useState hook",
+        "They can't handle state",
+        "Using the setState method",
+        "Through class inheritance"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which hook automatically cleans up subscriptions or side effects?",
+      "options": ["useEffect", "useLayoutEffect", "useMemo", "useCallback"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the primary role of the React Router library?",
+      "options": [
+        "State management",
+        "Data binding",
+        "Declarative routing",
+        "Component styling"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What does the term 'lifting state up' refer to in React?",
+      "options": [
+        "Moving state to a parent component to share between siblings",
+        "Increasing the size of the state for better performance",
+        "Storing state in a cloud service",
+        "Enhancing the state with additional properties"
+      ],
+      "correctOption": 0,
+      "points": 10
+    }
+  ]
+}
