@@ -1,8 +1,12 @@
 import { useEffect } from "react";
+import { QuizContextProps } from "../interfaces/QuizContext";
+import { useQuiz } from "../contexts/QuizContext";
 
-export default function Timer({ dispatch, secondsRemaining }) {
-  const minutes = Math.floor(secondsRemaining / 60);
-  const seconds = secondsRemaining % 60;
+export default function Timer() {
+  const { secondsRemaining, dispatch } =
+    useQuiz() as unknown as QuizContextProps;
+  const minutes = secondsRemaining && Math.floor(secondsRemaining / 60);
+  const seconds = secondsRemaining && secondsRemaining % 60;
 
   useEffect(() => {
     const id = setInterval(() => {
@@ -16,8 +20,8 @@ export default function Timer({ dispatch, secondsRemaining }) {
 
   return (
     <div className="timer">
-      {minutes < 10 && "0"}
-      {minutes}:{seconds < 10 && "0"}
+      {minutes && minutes < 10 && "0"}
+      {minutes}:{seconds && seconds < 10 && "0"}
       {seconds}
     </div>
   );

@@ -1,8 +1,10 @@
-import { useQuiz } from "../contexts/QuizContext";
-import { QuizContextProps } from "../interfaces/QuizContext";
-
-export default function StartScreen() {
-  const { numQuestions, dispatch } = useQuiz() as unknown as QuizContextProps;
+export default function StartScreen({
+  numQuestions,
+  dispatch,
+}: Readonly<{
+  numQuestions: number;
+  dispatch: React.Dispatch<any>;
+}>) {
   return (
     <div className="start">
       <h3>Welcome to the React Quiz!</h3>

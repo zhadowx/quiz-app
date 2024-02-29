@@ -1,9 +1,9 @@
-import { useQuiz } from "../contexts/QuizContext";
-import { QuizContextProps } from "../interfaces/QuizContext";
-
-export default function NextButton() {
-  const { answer, index, numQuestions, dispatch } =
-    useQuiz() as unknown as QuizContextProps;
+export default function NextButton({
+  dispatch,
+  answer,
+  index,
+  numQuestions,
+}: any) {
   if (answer === null) return null;
   if (index < numQuestions - 1)
     return (

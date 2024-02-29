@@ -1,8 +1,8 @@
-import { useQuiz } from "../contexts/QuizContext";
-import { QuizContextProps } from "../interfaces/QuizContext";
-
-export default function Options({ question }: Readonly<{ question: any }>) {
-  const { answer, dispatch } = useQuiz() as unknown as QuizContextProps;
+export default function Options({
+  question,
+  dispatch,
+  answer,
+}: Readonly<{ question: any; dispatch: React.Dispatch<any>; answer: any }>) {
   const hasAnswered = answer !== null;
   function styleOptions(index: number) {
     let style = "";

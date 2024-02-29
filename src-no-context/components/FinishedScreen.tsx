@@ -1,13 +1,14 @@
-import { useQuiz } from "../contexts/QuizContext";
-import { QuizContextProps } from "../interfaces/QuizContext";
-
-export default function FinishedScreen() {
-  const {
-    points,
-    maxPossiblePoints,
-    highscore,
-    handleRestart: onRestart,
-  } = useQuiz() as unknown as QuizContextProps;
+export default function FinishedScreen({
+  points,
+  maxPossiblePoints,
+  highscore,
+  onRestart,
+}: Readonly<{
+  points: number;
+  maxPossiblePoints: number;
+  highscore: number;
+  onRestart: any;
+}>) {
   const percentage = (points / maxPossiblePoints) * 100;
   let emoji;
   if (percentage === 100) emoji = "🥇";
