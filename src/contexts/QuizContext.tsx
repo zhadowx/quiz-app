@@ -1,6 +1,7 @@
 import {
   createContext,
   useCallback,
+  useContext,
   useEffect,
   useMemo,
   useReducer,
@@ -178,7 +179,7 @@ function QuizProvider({ children }: Readonly<{ children: any }>) {
 }
 
 function useQuiz() {
-  const context = createContext(QuizContext);
+  const context = useContext(QuizContext);
   if (!context) {
     throw new Error("useQuiz must be used within a QuizProvider");
   }
